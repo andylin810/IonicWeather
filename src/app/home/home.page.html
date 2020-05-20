@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="text-align: center;" color="tertiary">
+    <ion-buttons slot="secondary">
+      <ion-button [routerLink]="['/settings']">
+        About
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+      <ion-button [routerLink]="['/add']" slot="end">
+        Add
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Weather App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  <section style="background: rgb(138, 160, 235); padding-top: 10px;">
+    <ion-grid *ngIf="city">
+      <ion-row>
+        <ion-col width-50 offset-25>
+          <ion-label class="label">{{city.cityName}}, {{city.countryName}}</ion-label>
+          <div class="label"><img style="width: 100px; height: 100px;"
+              src='http://openweathermap.org/img/wn/{{city.icon}}.png'></div>
+          <h1 class="label-temp">{{city.temp}} &deg;C</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col width-100>
+            <ion-list style="background: transparent;">
+              <ion-item>
+                <ion-label class="label-2">Condition: {{city.weather}}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label class="label-2">Temperature: {{city.temp}}&deg;C</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label class="label-2">Humidity: {{city.humidity}}%</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label class="label-2">Wind Speed: {{city.windspeed}} km/h</ion-label>
+              </ion-item>
+            </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+  <ion-list-header>
+    <ion-label style="font-size: large; font-weight: bold;" color='primary'>Favourite Cities</ion-label>
+  </ion-list-header>
+  <ion-list *ngFor='let city of cityList'>
+    <ion-item>
+      <ion-label button (click)="setDefault(city)">{{city}}</ion-label>
+      <ion-icon button (click)='deleteCity(city)' name="remove-circle-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

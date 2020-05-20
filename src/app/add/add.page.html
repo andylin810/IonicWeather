@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color='tertiary'>
+    <ion-title>ADD CITY</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button slot="start" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="myForm" (ngSubmit)="submit()">
+    <ion-input type='text' formControlName="name"></ion-input>
+    <div *ngIf="myForm.get('name').touched && myForm.get('name').invalid">
+      <div style="color: red;" *ngIf="myForm.get('name').errors.required">City name is required</div>
+    </div>
+    <ion-button [disabled]='!myForm.valid' expand="block" type="submit">
+      <ion-label>Add</ion-label>
+      <ion-icon slot="end" name="checkmark-done-outline"></ion-icon>
+    </ion-button>
+  </form>
+</ion-content>
