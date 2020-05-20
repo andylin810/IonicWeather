@@ -10,7 +10,9 @@ My project is a real-time Weather App that will show the temperature and other w
 # Screenshots of the site
 
 ![screen shot of home page](https://github.com/andylin810/IonicWeather/blob/master/resources/home.JPG "Home Page")
+
 ![screen shot of about page](https://github.com/andylin810/IonicWeather/blob/master/resources/about.JPG "About Page")
+
 ![screen shot of add page](https://github.com/andylin810/IonicWeather/blob/master/resources/add.JPG "Add Page")
 
 
