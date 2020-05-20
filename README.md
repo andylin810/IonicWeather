@@ -9,9 +9,9 @@ My project is a real-time Weather App that will show the temperature and other w
 
 # Screenshots of the site
 
-![alt text](https://https://github.com/andylin810/IonicWeather/tree/master/resources/home.JPG "Home Page")
-![alt text](https://https://github.com/andylin810/IonicWeather/tree/master/resources/about.JPG "Home Page")
-![alt text](https://https://github.com/andylin810/IonicWeather/tree/master/resources/add.JPG "Cart Page")
+![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/home.JPG "Home Page")
+![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/about.JPG "Home Page")
+![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/add.JPG "Cart Page")
 
 
 
