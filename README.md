@@ -4,14 +4,14 @@ My project is a real-time Weather App that will show the temperature and other w
 # About this app
 
 * This app uses the Ionic and Angular framework
-* Data is stored in local SQLite database 
+* Favourite cities are stored in local SQLite database 
 * Weather API being used is OpenWeather API
 
 # Screenshots of the site
 
-![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/home.JPG "Home Page")
-![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/about.JPG "Home Page")
-![alt text](https://github.com/andylin810/IonicWeather/tree/master/resources/add.JPG "Cart Page")
+![screen shot of home page](https://github.com/andylin810/IonicWeather/blob/master/resources/home.JPG "Home Page")
+![screen shot of about page](https://github.com/andylin810/IonicWeather/blob/master/resources/about.JPG "About Page")
+![screen shot of add page](https://github.com/andylin810/IonicWeather/blob/master/resources/add.JPG "Add Page")
 
 
 
